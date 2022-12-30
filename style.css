@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+  /* Generic */
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    background-color: hsl(30, 38%, 92%);
+    color: black;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 450px;
+    border-radius: 10px;
+    background-color: white;
+}
+.image{
+    width: 50%;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    width: 50%;
+    height: 90%;
+    padding: 0px 30px 0px 30px;
+}
+img{
+    width: 100%;
+    border-radius: 10px 0 0 10px;
+}
+.account{
+    display: grid;
+    grid-template-columns: 140px 90px ;
+    grid-template-rows: 50px 50px ;
+    grid-gap: 10px
+}
+.reduc{
+    grid-column: 1/2;
+}
+.price{
+    grid-column: 2/3;
+}
+.button{
+    grid-column: 1/3;
+    justify-content: center;
+    align-items: center;
+}
+.titre{
+    opacity: 60%;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    font-size: 12px;
+}
+.name{
+    font-size: 1.8em;
+    font-family: Fraunces;
+    line-height: 1.5em;
+}
+.paragraf{
+    opacity: 60%;
+    font-family: Montserrat;
+    line-height: 1.7em;
+}
+.reduc{
+    color: hsl(158, 36%, 37%);
+    font-size: 1.6em;
+    font-family:Fraunces ;
+}
+.price{
+    font-family: Montserrat;
+    opacity: 60%;
+    text-decoration: line-through;
+    padding-top: 10px;
+}
+/*
+.button{
+    font-family: Montserrat;
+    background: hsl(158, 36%, 37%);
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size: 1.3em;
+    padding: 12px 30px 10px 80px;
+}
+.button a{
+    text-decoration: none;
+    color: white;
+}
+.button:hover,.button a:hover,svg:hover{
+    background: white;
+    color:  hsl(158, 36%, 37%);
+    fill: hsl(158, 36%, 37%);
+    border: 2px solid hsl(158, 36%, 37%);
+}
+.button a:hover{
+    color: hsl(158, 36%, 37%);
+}
+svg{
+    fill: white;
+}
+svg:hover{
+    fill: hsl(158, 36%, 37%);
+}
+*/
+.button a {
+    font-family: Montserrat;
+    border-radius: 7px;
+    display:block;
+    width:100%;
+    line-height:50px;
+    text-align:center;
+    vertical-align:middle;
+    background:hsl(158, 36%, 37%);
+    color:white;
+    text-decoration:none;
+}
+svg{
+    fill: white;
+}
+.button a:hover {
+    background:white;
+    color: hsl(158, 36%, 37%);
+    border: 2px solid hsl(158, 36%, 37%);
+    
+}
+svg:hover{
+    fill: black;
+}
